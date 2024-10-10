@@ -1,12 +1,75 @@
+body {
+  background-image: url('https://images.pexels.com/photos/7674/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+}
 
-/* 
+.trafficContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.trafficPole {
+  width: 10px;
+  height: 120px;
+  background-color: rgb(31, 30, 30);
+  box-shadow: 2px 2px 2px 1px rgb(0,0,0,0.2);
+}
 
-*/
+.traffic {
+  width: 100px;
+}
+
+.container {
+  background-color: rgb(31, 30, 30);
+  width: 100px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.red.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(196, 145, 145);
+  margin: 10px auto;
+  transition: background-color 0.5s;
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.yellow.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(193, 193, 162);
+  margin: 10px auto;
+  transition: background-color 0.5s;
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.green.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(113, 129, 113);
+  margin: 10px auto;
+  transition: background-color 0.5s;
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.red.light.active {
+  background-color: rgb(207, 35, 35);
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.yellow.light.active {
+  background-color: rgb(212, 212, 36);
+  box-shadow: 0 0 30px rgb(255, 255, 0);
+}
+
+.green.light.active {
+  background-color: rgb(41, 129, 41);
+  box-shadow: 0 0 30px rgb(28, 120, 0);
+}
